@@ -76,8 +76,8 @@
 						     $email = $_POST['email'];
 						     $subject = $_POST['subject'];
 						     $message = $_POST['message'];
-						     $from = 'From: <the-email-that-you-want-it-to-come-from>';
-						     $to = '<recipient-email>';
+						     $from = 'sqlemon@robots.com';
+						     $to = 'damimelamed@gmail.com';
 						     $email_subject = 'New Contact Form Submission!';
 
 						     $body = "Name: $name\nE-mail: $email\nSubject: $subject\n\nThe message is below:\n$message";;
@@ -89,15 +89,15 @@
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Nombre</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="Nombre" id="name" />
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="text" name="Email" id="email" />
 										</div>
 										<div class="field">
 											<label for="message">Mensaje</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+											<textarea name="Mensaje" id="message" rows="4"></textarea>
 										</div>
 									</div>
 									<ul class="actions">
