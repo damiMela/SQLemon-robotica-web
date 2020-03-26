@@ -65,9 +65,27 @@
 							</article>
 
 						<!-- Contact -->
+						<?php
+						     $name = $_POST['name'];
+						     $email = $_POST['email'];
+						     $subject = $_POST['subject'];
+						     $message = $_POST['message'];
+						 ?>
+						 <?php
+						     $name = $_POST['name'];
+						     $email = $_POST['email'];
+						     $subject = $_POST['subject'];
+						     $message = $_POST['message'];
+						     $from = 'From: <the-email-that-you-want-it-to-come-from>';
+						     $to = '<recipient-email>';
+						     $email_subject = 'New Contact Form Submission!';
+
+						     $body = "Name: $name\nE-mail: $email\nSubject: $subject\n\nThe message is below:\n$message";;
+							?>
+
 							<article id="contact">
 								<h2 class="major">Contacto</h2>
-								<form method="post" action="#">
+								<form method="post" action=index.php>
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Nombre</label>
@@ -83,10 +101,24 @@
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Enviar" class="primary" /></li>
+										<li><input type="submit" name="submitbtn" value="Enviar" class="primary" /></li>
 										<li><input type="reset" value="Resetear formulario" /></li>
 									</ul>
 								</form>
+
+								<?php
+							    if (isset($_POST['submitbtn']))
+							    {
+							        if (mail($to, $email_subject, $body, $from))
+							        {
+							            echo "<font color=\"green\"><p>Your message has been sent!</p></font>";
+							        }
+							        else
+							        {
+							        echo "<font color=\"red\"><p>Your message sending has failed! Please manually email (your email)!</p></font>";
+							        }
+							    }
+							?>
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
