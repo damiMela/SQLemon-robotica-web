@@ -175,7 +175,10 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #edcb09;
+		/*text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+		*/
+		text-shadow: 2px 2px 0 #222222, 2px -2px 0 #222222, -2px 2px 0 #222222, -2px -2px 0 #222222, 2px 0px 0 #222222, 0px 2px 0 #222222, -2px 0px 0 #222222, 0px -2px 0 #222222;
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
@@ -1274,7 +1277,7 @@ input, select, textarea {
 				position: absolute;
 				top: calc(-3.5rem - 1px);
 				left: calc(50% - 1px);
-				width: 1px;
+				width: 0px; //1px;
 				height: calc(3.5rem + 1px);
 				background: #ffffff;
 			}
@@ -1291,12 +1294,14 @@ input, select, textarea {
 			width: 5.5rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
-			border: solid 1px #ffffff;
-			border-radius: 100%;
+			border: solid 6px #edcb09;
+			border-radius:20%;
+
 		}
 
 			#header .logo .icon:before {
 				font-size: 2rem;
+				color: #ffffff;
 			}
 
 		#header .content {
@@ -1319,6 +1324,7 @@ input, select, textarea {
 				padding: 3rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
+				background: rgba(0,0,0, .4);
 			}
 
 				#header .content .inner > :last-child {
@@ -1340,7 +1346,7 @@ input, select, textarea {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			border: solid 1px #ffffff;
+			border: solid 2px #edcb09;
 			border-radius: 4px;
 		}
 
@@ -1363,6 +1369,7 @@ input, select, textarea {
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
 					border-bottom: 0;
+					font-weight: bold;
 				}
 
 					#header nav ul li a:hover {
