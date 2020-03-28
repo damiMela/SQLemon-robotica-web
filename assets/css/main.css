@@ -126,7 +126,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			html {
-				font-size: 11pt;
+				font-size: 13pt;
 			}
 
 		}
@@ -134,7 +134,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			html {
-				font-size: 10pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -174,11 +174,21 @@ input, select, textarea {
 		margin: 0 0 2rem 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+
+/*	h1, h2, h3, h4, h5, h6 {
 		color: #edcb09;
-		/*text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
-		*/
 		text-shadow: 2px 2px 0 #222222, 2px -2px 0 #222222, -2px 2px 0 #222222, -2px -2px 0 #222222, 2px 0px 0 #222222, 0px 2px 0 #222222, -2px 0px 0 #222222, 0px -2px 0 #222222;
+		font-weight: 600;
+		line-height: 1.5;
+		margin: 0 0 1rem 0;
+		text-transform: uppercase;
+		letter-spacing: 0.2rem;
+
+	}*/
+
+	#success h1{
+		color: green !important;
+		text-shadow: 2px 2px 	0 #222222, 2px -2px 0 #222222, -2px 2px 0 #222222, -2px -2px 0 #222222, 2px 0px 0 #222222, 0px 2px 0 #222222, -2px 0px 0 #222222, 0px -2px 0 #222222;
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
@@ -192,6 +202,14 @@ input, select, textarea {
 		}
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
+			color: #edcb09;
+			text-shadow: 2px 2px 0 #222222, 2px -2px 0 #222222, -2px 2px 0 #222222, -2px -2px 0 #222222, 2px 0px 0 #222222, 0px 2px 0 #222222, -2px 0px 0 #222222, 0px -2px 0 #222222;
+			font-weight: 600;
+			line-height: 1.5;
+			margin: 0 0 1rem 0;
+			text-transform: uppercase;
+			letter-spacing: 0.2rem;
+
 			border-bottom: solid 1px #ffffff;
 			width: -moz-max-content;
 			width: -webkit-max-content;
@@ -200,6 +218,8 @@ input, select, textarea {
 			padding-bottom: 0.5rem;
 			margin: 0 0 2rem 0;
 		}
+
+
 
 	h1 {
 		font-size: 2.25rem;
@@ -701,6 +721,11 @@ input, select, textarea {
 			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
+		}
+
+		.gallery{
+			width: 20rem;
+			height: 20rem;
 		}
 
 			.image.main img {

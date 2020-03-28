@@ -11,6 +11,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script>
         $(document).ready(function() {
             var array = document.getElementsByTagName('body')[0].getElementsByTagName('a');
@@ -36,14 +38,14 @@
             <div class="content">
                 <div class="inner">
                     <h1>Square Lemon</h1>
-                    <p>Equipo rgentino de róbotica competitiva.</p>
+                    <p>Equipo argentino de róbotica competitiva.</p>
                 </div>
             </div>
             <nav>
                 <ul>
                     <li><a href="#intro">Nosotros</a></li>
-                    <li><a href="#work">Kriptón</a></li>
-                    <li><a href="#about">Alumno</a></li>
+                    <li><a href="#robots">Robots</a></li>
+                    <li><a href="#gallery">Galería</a></li>
                     <li><a href="#contact">Contacto</a></li>
                     <!--<li><a href="#elements">Elements</a></li>-->
                 </ul>
@@ -60,19 +62,33 @@
                 <p>Somos Damian Melamed y Ianick Noejovich, estudiantes de ingenierían electrónica (por ahora) apasionados por la róbotica. bla bla bla</p>
             </article>
 
-            <!-- Work -->
-            <article id="work">
+            <!-- Robots -->
+            <article id="robots">
+                <h2 class="major">Alumno</h2>
+                <span class="image main"><img src="images/alumnoImg.png" alt="" /></span>
+                <p><b>Alumno</b> es un robot seguidor de linea que compite en la modalidad "carreras" o "velocista" en la Liga Nacional de Robótica (LNR) Argentina.<br> </p>
+                <p>Podés encontrar componentes, programas y otras cosas entrando a <b><a href="#" style="background:#454545;">este link</a></b> o aportar nuevas ideas a través del formulario de contacto.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+                <hr><br>
                 <h2 class="major">Kriptón</h2>
                 <span class="image main"><img src="images/pic02.jpg" alt="" /></span>
                 <p>Adipiscing magna basta dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
                 <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
             </article>
 
-            <!-- About -->
-            <article id="about">
-                <h2 class="major">Alumno</h2>
-                <span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-                <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+            <!-- Fotos -->
+            <article id="gallery">
+                <h2 class="major">Galería</h2>
+                <span class="image main"><img class="gallery" src="images/img01.jpg" alt="" /></span>
+                <span class="image main"><img class="gallery" src="images/img02.jpg" alt="" /></span>
+                <span class="image main"><img class="gallery" src="images/img03.jpg" alt="" /></span>
+                <span class="image main"><img class="gallery" src="images/img04.jpg" alt="" /></span>
+                <span class="image main"><img class="gallery" src="images/img05.jpg" alt="" /></span>
+            </article>
+
+             <!-- About -->
+            <article id="success">
+                <h1 class="major">Mensaje enviado con éxito</h1>
             </article>
 
 
@@ -82,19 +98,19 @@
                     <div class="fields">
                         <div class="field half action">
                             <label for="name">Nombre</label>
-                            <input type="text" name="name" id="name" />
+                            <input type="text" name="name" id="name" required/>
                         </div>
                         <div class="field half action">
                             <label for="email">Email</label>
-                            <input type="text" name="email" id="email" />
+                            <input type="email" name="email" id="email" required />
                         </div>
                         <div class="field action">
                             <label for="subject">Asunto</label>
-                            <input type="text" name="subject" id="subject" />
+                            <input type="text" name="subject" id="subject"/>
                         </div>
                         <div class="field action">
                             <label for="message">Mensaje</label>
-                            <textarea name="message" id="message" rows="4"></textarea>
+                            <textarea name="message" id="message" rows="4" required></textarea>
                         </div>
                     </div>
                     <ul class="actions">

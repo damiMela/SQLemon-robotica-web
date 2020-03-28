@@ -1,4 +1,6 @@
 <?php
+$to_email_address = "sqlemonrobotics@gmail.com";
+
 if (isset($_POST['submitbtn'])) {
     $Name = $_REQUEST['name'];
     $Email = $_REQUEST['email'];
@@ -7,6 +9,8 @@ if (isset($_POST['submitbtn'])) {
 
     $finalMessage = "Mensaje de: " . $Email . "\n\n" . $Body;
     mail($to_email_address, $Subject, $finalMessage);
-    header('Location: index.html');
+
+    header('Location: index.html#success');
     exit;
+
 }
